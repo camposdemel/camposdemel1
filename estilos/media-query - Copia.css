@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical Device 
+Pequenas Telas  de 000px    até 600px
+Celular         de  600px   até 768px
+Tablet          de 768px    até 992px 
+Desktop         de 992px    até 1200px
+Grandes Telas   de          até 1200px 
+*/
+
+@media print {
+    body {
+        background-image: url(../imagens/melgueira600x800.png);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: brown;
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: "Essa impressão foi feita através do site www.cursoemvideo.com.br";
+        text-decoration: overline;
+    }
+    
+    img#phone   {display: none;}
+    
+    img#tablet  {display: none;}
+    img#print   {display: block;} 
+    img#pc      {display: none;}
+    img#tv      {display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/Foto768x768.png);
+    }
+
+    img#phone   {display: none;}
+    
+    img#tablet  {display: block;}
+    img#print   {display: none;} 
+    img#pc      {display: none;}
+    img#tv      {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/Foto1600x1600.png);
+    }
+
+    img#phone   {display: none;}
+    
+    img#tablet  {display: none;}
+    img#print   {display: none;} 
+    img#pc      {display: block;}
+    img#tv      {display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    body {
+        background-image: url(../imagens/Foto0001.jpeg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone   {display: none;}
+    
+    img#tablet  {display: none;}
+    img#print   {display: none;} 
+    img#pc      {display: none;}
+    img#tv      {display: block;}
+}
