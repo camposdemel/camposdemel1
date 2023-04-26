@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: black url(../imagens/Foto300x300.png) no-repeat;
+    background-image:url(../imagens/Foto300x300.png);
     background-size: cover;
     background-position: center center;
 }
