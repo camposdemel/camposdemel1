@@ -13,14 +13,15 @@ html {
 }
 
 body {
-    background-image:url(../imagens/Foto300x300.png);
+/*    background-image:url(../imagens/Foto300x300.png); */
+    background-color: rgb(179, 179, 76);
     background-size: cover;
     background-position: center center;
 }
 
 main {
     background-color: rgba(255, 255, 255, 0.842);
-    width: 400px;
+    width: 300px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -28,8 +29,10 @@ main {
 }
 
 h1 {
+/*    position: absolute; */
+/*    top: 90px; */
     text-align: center;
-    color: white;
+    color: rgb(247, 10, 10);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
     font-size: 2em;
 }
